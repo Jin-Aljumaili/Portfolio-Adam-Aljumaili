@@ -10,12 +10,42 @@ body {
     color: #fff;
 }
 
+nav {
+    background-color: #f00;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #000;
+    padding-top: 60px; /* to avoid navbar overlap */
 }
 
 .container {
@@ -42,6 +72,21 @@ p {
 
 .social-links a:hover {
     color: #f00;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#skills, #about, #contact {
+    background-color: #111;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #f00;
+    margin-bottom: 20px;
 }
 
 footer {
