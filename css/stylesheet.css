@@ -1,3 +1,4 @@
+/* General styling */
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +40,7 @@ nav ul li a:hover {
     color: #000;
 }
 
+/* Header section */
 header {
     display: flex;
     justify-content: center;
@@ -52,6 +54,22 @@ header {
     text-align: center;
 }
 
+/* Initially, content is hidden and slightly moved */
+h1, p, .social-links {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Once content-loaded class is added, everything becomes visible */
+body.content-loaded h1, 
+body.content-loaded p, 
+body.content-loaded .social-links {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling for elements */
 h1 {
     font-size: 3em;
     color: #f00;
@@ -74,6 +92,7 @@ p {
     color: #f00;
 }
 
+/* Section styling */
 section {
     padding: 60px 0;
     text-align: center;
