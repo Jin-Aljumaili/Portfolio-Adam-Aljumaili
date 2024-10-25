@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,47 +26,71 @@
     <section id="about-project">
         <div class="container">
             <h2>About the Project</h2>
-            <p>Project Zomboolean was a 4 week long project that was aimed for young teens and created using the Unity engine, it's an interactive top down shooting game where your choices matter, from equipping different weapons, upgrading your skills, and buying more land to slay all the evil zombies</p>
+            <p>Project Zomboolean was a 4-week-long project aimed at young teens and created using the Unity engine. It's an interactive top-down shooting game where your choices matter—from equipping different weapons, upgrading your skills, and buying more land to slay all the evil zombies.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/crjATiYVeUg?si=1mlgEUYyOxL_TiS2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <!-- Replace YOUR_VIDEO_ID with the actual YouTube video ID -->
         </div>
     </section>
-
 
     <!-- Teamwork Section -->
     <section id="teamwork">
         <div class="container">
             <h2>Teamwork</h2>
-            <p>This project was not possible without the controbution of all people involved.</p>
+            <p>This project was not possible without the contribution of all team members involved.</p>
             <ul>
                 <li>
-                    <p>to communicate and plan our work we used a combination of written and vocal standUps, 
-                     and had an end of day meeting everyday that refined our vision and made us set clear short and long term goals for the project, during the project month we gave eachother feedback, and set improvement plans for the group as a whole
-                     </p>             
+                    <p>To communicate and plan our work, we used a combination of written and vocal stand-ups. We had an end-of-day meeting every day that refined our vision and set clear short- and long-term goals for the project. During the project month, we gave each other feedback and set improvement plans for the group as a whole.</p>             
                 </li>
                 <li>
-                    <p>We used SCRUM insensivly, using trello, meetings, and revisions each week based on the SCRUM way of teamwork,</p>
+                    <p>We used SCRUM intensively, using Trello, meetings, and revisions each week based on the SCRUM method of teamwork.</p>
                     <img src="img/Trello.PNG" alt="Trello usage example">
                 </li>
                 <li>
-                    <p>We also used github to work together and seemlessly work our way from brain storming, to designing and finally into production, it helped us keep track of all the changes and back track to solve the challeneges we faced! </p>
+                    <p>We also used GitHub to collaborate and seamlessly progress from brainstorming to designing and finally into production. It helped us keep track of all changes and backtrack to solve the challenges we faced!</p>
                     <img src="img/Github.PNG" alt="GitHub usage example">
                 </li>
             </ul>
         </div>
     </section>
+
+    <!-- My Contribution Section -->
     <section id="my-contribution">
         <div class="container">
             <h2>My Contribution</h2>
             <ul>
                 <li>
-                    <h2>design phase</h2>
-                    <p>I worked on the TGDD, which set the foundation for our theme, genre, game mechanics and in part the UI design
-                        I researched the plane purchasing mechanic and presented it to my group
-                    </p>
+                    <h2>Design Phase</h2>
+                    <p>I worked on the TGDD, which set the foundation for our theme, genre, game mechanics, and partly the UI design. I researched the plane purchasing mechanic and presented it to my group.</p>
+                </li>
+                <li>
+                    <h2>UI/UX</h2>
+                    <p>I created animated damage numbers using a mix of scripting and animation events to create the tempo and loop of the animation.</p>
+                    <img src="img/damagenumbers.png" alt="Example of a damage number">
+                    <img src="img/animation.png" alt="Unity animation snapshot">
+
+                    <p>I also created and implemented the Plane Cost UI, indexing the object into the plane allowed me to perfect the positioning and quality of the UI element.</p>
+                    <img src="img/buyplane.png" alt="A picture of the buy sign and the UI element of the cost">
+                    
+                    <p>I created the gold top-bar UI, implementing it in a way where numbers get parsed into suffixes—for example, 1,000,000 becomes 1M.</p>
+                    <img src="img/moneyexample.png" alt="Snapshot of the player currency">
+                    <img src="img/suffix.png" alt="A snapshot of the code I created to implement suffix parsing">
+                </li>
+                <li>
+                    <h2>Programming/Coding</h2>
+                    <p>Player Camera: I programmed the main camera to always follow the player at a certain angle and created an angle locker so the UI elements of damage and plane cost always face the camera.</p>
+                    <img src="img/camerascript.png" alt="The camera controlling script">
+                    
+                    <p>I created randomized rewards for killing zombies, making them public for easier accessibility. I also randomized which animation plays for the damage pop-up before instantiating the animation.</p>
+                    <img src="img/killgold.png" alt="The code that rewards the player with money">
+                    <img src="img/damageanimation.png" alt="The script that initializes damage prefabs">
+                    
+                    <p>I also created the plane purchasing mechanic, looping through all the children of the plane components to set/update the pricing for all buy signs and updating the UI Text element with the correct amount.</p>
+                    <img src="img/planecost.png" alt="The code that sets and remembers the plane cost for each future plane">
+                    <img src="img/planecost2.png" alt="The code that sets the correct data to each UI element and increases the plane cost">
+                    
+                    <p>Player Movement: I implemented the player movement using a dynamic joystick package for the control UI, utilizing engine physics to build the player controls for smooth movement.</p>
+                    <img src="img/playermove.png" alt="The script that moves the player around the world">
                 </li>
             </ul>
-            <p></p>
         </div>
     </section>
 
@@ -73,11 +98,10 @@
     <section id="github">
         <div class="container">
             <h2>Access the Game</h2>
-            <p>You can access the full game and its source code on GitHub.</p>
-            <p><a href="https://github.com/yourgithubrepo" target="_blank">View the Game on GitHub</a></p> <!-- Add your GitHub link here -->
+            <p>You can access the full game and the 3 pre-releases we made during the project period.</p>
+            <p><a href="https://github.com/FleFra/MicroGame" target="_blank">View the game!</a></p>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Adam Aljumaili. All rights reserved.</p>
