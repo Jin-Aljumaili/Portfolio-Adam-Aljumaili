@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.projectTitle {
+    color: #808080; /* Gray color */
+}
 
 body {
     background-size: cover;
@@ -92,6 +95,56 @@ h2 {
     font-size: 2.5em;
     color: #f00;
     margin-bottom: 20px;
+}
+.skill {
+    margin: 20px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/* Skill Bar Container */
+.skill-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+/* Skill Level Bars with Different Colors */
+.skill-level {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Color Specific Skill Levels */
+.unity-level {
+    background-color: #4CAF50; /* Green */
+}
+
+.html-css-level {
+    background-color: #2196F3; /* Blue */
+}
+
+.javascript-level {
+    background-color: #FF9800; /* Orange */
+}
+
+.php-level {
+    background-color: #9C27B0; /* Purple */
+}
+.csharp-level {
+    background-color: #00C853; /* Dark Green */
 }
 
 footer {
